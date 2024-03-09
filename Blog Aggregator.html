@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Aggregator</title>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.header, footer {
+    background: coral;
+    color: lightblue;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.sidebar {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: lightgreen;
+    background: black;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+    background: lightseagreen;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post-meta {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+.headbar{
+    background: red;
+    color: aquamarine;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+img{
+  height: 200px;
+  width: 200px;
+}
+ /* Example of CSS media queries */
+/* For smaller screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    /* CSS rules for small screens */
+  }
+  
+  /* For medium-sized screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS rules for medium-sized screens */
+  }
+  
+  /* For larger screens (desktops) */
+  @media only screen and (min-width: 1025px) {
+    /* CSS rules for large screens */
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="headbar">Blog Aggregator</nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <a href="#" onclick="toggleSubcategory('technology')">Technology</a>
+            <!-- Sidebar content goes here -->
+            
+                
+                    
+                       
+                            <ul>
+                                <li><a href="gadgets.html">Gadgets</a></li>
+                                
+                                
+                                <li><a href="software development.html">Software Development</a></li>
+                                <li><a href="cyber security.html">Cybersecurity</a></li>
+                                <li><a href="artificial intelligence.html">Artificial Intelligence</a></li>
+                                <li><a href="data science.html">Datascience</a></li>
+                                <li><a href="cloud computing.html" onclick="loadCategory('Cloud computing')">Cloud computing</a></li>
+                                <!-- Add more categories here -->
+                                <aside class="sidebar"></aside>
+                            </ul>
+                        </aside>
+                        
+                    </aside>
+                    
+                </ul>
+            </aside>
+            
+        </aside>
+        <main class="main-content">
+            <!-- Main content and blog posts go here -->
+           <img src="https://img.freepik.com/premium-photo/social-media-blog-concept-futuristic-icon-design-graphics-hand-with-smartphone_102583-6104.jpg" alt="">
+           <img src="https://www.poweradmin.com/blog/wp-content/uploads/2019/01/tech-blogs.jpg" alt="">
+           <img src="https://img.freepik.com/premium-photo/social-media-blog-concept-futuristic-icon-design-graphics-hand-with-smartphone_102583-6104.jpg" alt="">
+           <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230516164054/Top-Tech-Blogs-For-Latest-Tech-Updates-copy-(1).webp" alt="">
+
+            <!-- Add more posts here -->
+        </main>
+    </div>
+    <footer>
+        <!-- Footer content goes here -->
+        © 2024 Blog Aggregator
+    </footer>
+
+    <script src="Blog Aggregator.js"></script>
+</body>
+</html>
